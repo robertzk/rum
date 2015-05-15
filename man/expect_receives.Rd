@@ -7,13 +7,27 @@
 expect_receives(function_name, arguments, expr, times = 1)
 }
 \arguments{
-\item{function_name}{}
+\item{function_name}{name. Either the name of the function, or
+a package function given by the \code{::} or \code{:::} operators.}
+
+\item{arguments}{list. A subset of the arguments we expect the
+function to be called with.}
 
 \item{expr}{expression. An R expression that should somewhere during
 it execution call \code{function_name}.}
+
+\item{times}{integer. The number of times the function should be
+called with these arguments. By default, \code{1}.}
+}
+\value{
+\code{NULL}, invisibly, but an error if the expectation
+   is not satisfied (i.e., \code{function_name} is not called).
 }
 \description{
 This assertion checks that a given function is called with specified
 arguments during the execution of another expression.
+}
+\examples{
+# expect_receives(force, list(1), lapply(c(1,1), force), times = 2)
 }
 

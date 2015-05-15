@@ -21,6 +21,6 @@ it execution call \code{function_name}.}
 Expect a given function to be called during an expression.
 }
 \examples{
-expect_called(force, force(1))
+# expect_called(force, force(1))
 }
 
