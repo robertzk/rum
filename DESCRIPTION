@@ -1,7 +1,14 @@
-Package: package.name
+Package: rum
 Type: Package
-Title: package name (http://github.com/author/package)
-Description: Describe the package.
+Title: Mocha-inspired mocking and stubbing (http://github.com/robertzk/rum)
+Description: Have you ever wished to test whether a certain R function
+    was called or not called? Or whether it was called with a given
+    set of parameters?
+
+    Inspired by Ruby's Mocha gem, rum aims to make it easy to write
+    tests that ensure other package functions are or are not called.
+    This is important because it eliminates messy stubbing that would
+    have to be performed otherwise to achieve the same effect.
 Version: 0.1.0
 Author: Robert Krzyzanowski <technoguyrob@gmail.com>
 Maintainer: Robert Krzyzanowski <technoguyrob@gmail.com>
@@ -11,10 +18,9 @@ Depends:
     R (>= 3.0.1)
 License: MIT
 LazyData: true
-Imports:
-    stringr
 Suggests:
     knitr,
     microbenchmark,
-    testthat
+    testthat,
+    testthatsomemore
 Roxygen: list(wrap = FALSE)
