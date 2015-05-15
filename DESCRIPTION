@@ -16,9 +16,10 @@ Depends:
     R (>= 3.0.1)
 License: MIT
 LazyData: true
+Imports:
+    testthat
 Suggests:
     knitr,
     microbenchmark,
-    testthat,
     testthatsomemore
 Roxygen: list(wrap = FALSE)
