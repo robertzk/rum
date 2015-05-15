@@ -3,10 +3,8 @@ Type: Package
 Title: Mocha-inspired mocking and stubbing (http://github.com/robertzk/rum)
 Description: Have you ever wished to test whether a certain R function
     was called or not called? Or whether it was called with a given
-    set of parameters?
-
-    Inspired by Ruby's Mocha gem, rum aims to make it easy to write
-    tests that ensure other package functions are or are not called.
+    set of parameters? Inspired by Ruby's Mocha gem, rum aims to make it easy
+    to write tests that ensure other package functions are or are not called.
     This is important because it eliminates messy stubbing that would
     have to be performed otherwise to achieve the same effect.
 Version: 0.1.0
@@ -16,11 +14,12 @@ Authors@R: c(person("Robert", "Krzyzanowski",
     email = "technoguyrob@gmail.com", role = c("aut", "cre")))
 Depends:
     R (>= 3.0.1)
-License: MIT
+License: MIT + file LICENSE
 LazyData: true
+Imports:
+    testthat
 Suggests:
     knitr,
     microbenchmark,
-    testthat,
     testthatsomemore
 Roxygen: list(wrap = FALSE)
