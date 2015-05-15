@@ -6,9 +6,10 @@
 #'    it execution call \code{function_name}.
 #' @return \code{NULL}, invisibly, but an error if the expectation
 #'    is not satisfied (i.e., \code{function_name} is not called).
+#' @export
 #' @examples
 #' expect_called(force, force(1))
 expect_called <- function(function_name, expr) {
-  
+
 }
 
