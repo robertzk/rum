@@ -6,6 +6,9 @@
 #' @param envir environment. The environment to create an active binding
 #'    in which will create mocked locals (by default the calling environment).
 #' @export
+#' @examples \dontrun{
+#'
+#' }
 let <- function(name, expr, envir = parent.frame()) {
   name <- gsub('"', '', deparse(substitute(name)), fixed = TRUE)
   force(envir)
