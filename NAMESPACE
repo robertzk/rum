@@ -2,3 +2,4 @@
 
 export(expect_called)
 export(expect_receives)
+export(let)
